@@ -1,0 +1,8 @@
+/* Är stylen till tabellen för matcherna*/
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3, auto);
+    
+  }
+
+

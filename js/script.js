@@ -1,4 +1,4 @@
-
+/*När man klickar på logo så kommer menu länkarna upp(nav-links)*/ 
 function toggleNav() {
     var navLinks = document.getElementById("nav-links");
     if (navLinks.style.display === "block") {
@@ -7,4 +7,6 @@ function toggleNav() {
       navLinks.style.display = "block";
     }
   }
+
+ 
   

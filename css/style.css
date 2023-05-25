@@ -3,6 +3,10 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
+  background-color: black;
+}
+.footer{
+background-color: black;
 }
 
 .main_page{
@@ -17,7 +21,7 @@ header nav {
   justify-content: space-between;
   padding-top: 2rem; 
 }
-
+/* Stylar infon som kommer visas direkt i naven som också kommer agera som menu knappar*/
 .logo img {
   width: 30px;
 margin-left: 2rem;
@@ -25,10 +29,9 @@ margin-left: 2rem;
 .logo p{
   color: #fff;
   font-size: 2rem;
-  font-family: "Brotherina";
   cursor: pointer;
 } 
-ul{
+#nav-links{
   display:none;
 }
 
@@ -51,43 +54,40 @@ margin-left: 1rem;
  color:#fff;
 }
 
-header nav ul li a {
+.links {
   color: #fff;
   text-decoration: none;
-  font-family: "Myriad pro";
   font-size:larger;
   padding-right: 3rem;
 }
-header nav ul li a {
+.links{
   list-style: none;
   margin-right: 2rem;
 }
-header nav ul li a:hover {
+/*När man hoverar över de olika nav linksen så kommer de ändra färg.*/
+.links:hover {
   color: #f5b53a;
-  font-family: "Brotherina";
 
 }
 /*slut nav */
-
+/* Stylar så att bilden blir responsiv i sin position och hur mycket plats den ska ha från toppen till naven */
 #main_row{
   display:flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   margin-top: 50px;
 }
-
+/*stylar texten i innehållet(mainrow)*/
 #main_row .showcase2 h1{
   font-size: 4rem;
-  font-family: "Myriad Pro";
   color: #f5b53a;
   padding-top: 1rem;
 }
 #main_row .showcase2 p{
-  font-family: "Myriad Pro";
   color:#fff;
 }
+/*Stylar join knappen så att den har avrundade kanter tack vare border radius samt att när man hoverar över knappen så byter den sakta färg till orange.*/
 #main_row .showcase2 button{
-  font-family: "Myriad Pro";
   color:#f5b53a;
   background-color:#fff ;
   padding: 1rem 2rem 1rem 2rem;
@@ -103,6 +103,7 @@ header nav ul li a:hover {
   transition: background-color 0.5s ease-in;
   cursor:pointer;
   }
+
   #main_row .showcase2 .message{
     display: inline;
   }
@@ -135,6 +136,7 @@ cursor: pointer;
   display: flex;
   color:#f5b53a
 }
+/*SÄger hur mellan rummet mellan bilderna ska vara  och vilken färg containern ska ha*/
 .grid-container {
   columns: 5 200px;
   column-gap: 1.5rem;
@@ -142,6 +144,7 @@ cursor: pointer;
   margin: 0 auto;
   color:#f5b53a
   }
+  /*HUr containern/ramen runt foto ska se ut och vad som hände rnär man har muspekaren inuti ramen*/
   .foto{
     width: 150px;
     margin: 0 1.5rem 1.5rem 0;
@@ -153,7 +156,7 @@ cursor: pointer;
     border-radius: 5px;
     transition: all .25s ease-in-out;
    }
-    
+    /*Satt ett filter framför bilderna som försvinner när man hoverar*/
     img:hover {
       filter: grayscale(0);
     }
@@ -170,10 +173,76 @@ cursor: pointer;
       margin: 5px 0;
       padding: 0;
       text-align: center;
-      font-style: italic;
     }
-  
+    .grid{
+      background-color: #f5b53a;
+    padding: 10px;
+    }
+    /*Stylar hur grid items ska var positionerade vilken färg de ska ha samt hur kanterna runt grid-items ska se ut*/
+    .grid-item {
+      background-color: black;
+      border: 1px solid #f5b53a;
+      color:#f5b53a;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
 
+    }
+  #top{
+    color: #f5b53a;
+  }
+ @media screen and(max-width: 480px){
+   .logo{
+    display: none;
+   }
+.ul{
+  display:contents;
+  grid-column: 1/-1;
+
+}
+  
+ }
+
+ @media (max-width: 767px) {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .logo p {
+    margin: 0;
+  }
+
+  #search {
+    display: none; /*ta bort/gömma search baren*/
+  }
+
+
+
+  #nav-links.visible {
+    display: block; /* visa navlinksen */
+  }
+
+  #nav-links li {
+    margin-bottom: 10px;
+  }
+
+  #nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*När websiten eller anvönderen inte har script styling*/
+
+h2{
+color: #f5b53a;
+}
 
 
 
