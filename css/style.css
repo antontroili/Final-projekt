@@ -5,17 +5,14 @@
   box-sizing: border-box;
   background-color: black;
 }
-.footer{
-background-color: black;
-}
 
 .main_page{
-  background-color: black;
-  height: 100vh;
+  
+  height: 20vh;
 }
 /*start nav */
 header nav {
-  background-color:black;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -124,7 +121,7 @@ cursor: pointer;
 
 
 .container{
-  background-color: black;
+  
   display: flex;
   justify-content: center;
   
@@ -190,16 +187,20 @@ cursor: pointer;
     }
   #top{
     color: #f5b53a;
+    display:flex;
+    justify-content: center;
   }
- @media screen and(max-width: 480px){
+ @media screen and (max-width: 480px)
+ {
    .logo{
     display: none;
    }
-.ul{
-  display:contents;
+ul{
+  display: contents;
   grid-column: 1/-1;
 
 }
+
   
  }
 
@@ -236,12 +237,22 @@ cursor: pointer;
     color: #fff;
     text-decoration: none;
   }
-}
+  img{
+    filter: grayscale(0);
+  }
+  
 
-/*När websiten eller anvönderen inte har script styling*/
+  }
+  
+
+/*När websiten eller använderen inte har script styling*/
 
 h2{
 color: #f5b53a;
+}
+a{
+  color: #fff;
+  text-decoration: none;
 }
 
 
